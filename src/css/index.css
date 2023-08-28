@@ -1,0 +1,16 @@
+@keyframes roller {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* #belt-parenet {
+  animation: roller 10s ease-in infinite;
+}
+#belt-parenet-2 {
+  animation-delay: 10s;
+  animation: roller 10s ease-in infinite;
+} */

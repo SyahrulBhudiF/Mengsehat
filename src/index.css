@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans:wght@500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .btn{
+        @apply font-medium px-8 py-4 text-center rounded-sm border-black border-2 border-solid hover:opacity-70 cursor-pointer
+    }
+
+    .navLi{
+        @apply cursor-pointer px-2.5 py-1 rounded-full hover:bg-black hover:bg-opacity-60 hover:text-white duration-300 ease-in-out
+    }
+}
