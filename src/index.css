@@ -11,4 +11,8 @@
     .navLi{
         @apply cursor-pointer px-2.5 py-1 rounded-full hover:bg-black hover:bg-opacity-60 hover:text-white duration-300 ease-in-out
     }
+
+    .txtBelt{
+        @apply text-white font-bebas-neue text-[4rem]
+    }
 }
