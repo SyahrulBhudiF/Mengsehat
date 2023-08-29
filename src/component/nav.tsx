@@ -1,7 +1,8 @@
 import '../index.css';
+import { navInterface } from '../type';
 import anime from '../../node_modules/animejs/lib/anime.es';
 
-export const Nav = ({ navlist }: { navlist: string[] }) => {
+export const Nav = ({ navlist }: navInterface) => {
   anime({
     targets: 'header',
     translateY: ['-100%', '0%'],

@@ -1,10 +1,6 @@
-import React from 'react';
+import { buttonInterface } from '../../type';
 
-interface Props {
-  text: string[];
-}
-
-export const Button: React.FC<Props> = ({ text }) => {
+export const Button = ({ text }:buttonInterface) => {
   return (
     <div className="flex gap-[0.625rem] items-center">
 

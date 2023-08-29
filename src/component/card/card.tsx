@@ -1,13 +1,9 @@
-import React from "react"
+import { cardInterface } from "../../type"
 
-interface Props{
-  img: string
-}
-
-export const Card: React.FC<Props> = ({img}) => {
+export const Card = ({img}:cardInterface) => {
   return (
     <div className="rounded-sm">
-        <img src={img} alt=""/>
+        <img src={img} alt="" className=""/>
     </div>
   )
 }

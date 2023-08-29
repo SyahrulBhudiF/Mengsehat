@@ -1,6 +1,7 @@
 import { Nav } from './component/nav';
 import { Home } from './component/home';
 import { Belt } from './component/belt';
+import { Cards } from './component/card/cards';
 import './css/index.css';
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
       />
       <Home />
       <Belt />
+      <Cards />
+
     </body>
   );
 };
