@@ -1,9 +1,16 @@
-import { cardInterface } from "../../type"
+import { cardInterface } from '../../type';
 
-export const Card = ({img}:cardInterface) => {
+export const Card = ({ img, text, Icon, px, py, fontSize }: cardInterface) => {
+  const classStyle = `rounded-full bg-slate-600 z-0 ${py} ${px} font-bebas-neue ${fontSize} text-white bg-opacity-60 backdrop-blur-sm`;
+
   return (
-    <div className="rounded-sm">
-        <img src={img} alt="" className=""/>
+    <div className="relative z-[0]">
+      <img src={img} alt="" className="rounded-sm filter hover:blur" />
+      <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-100 ease-in-out">
+        <span className={classStyle}>
+          {text} {Icon && <Icon />}
+        </span>
+      </div>
     </div>
-  )
-}
+  );
+};

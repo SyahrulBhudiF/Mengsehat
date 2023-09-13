@@ -26,6 +26,7 @@ export const Nav = ({ navlist }: navInterface) => {
           <li className="navLi">{navlist[3]}</li>
           <li className="navLi">{navlist[4]}</li>
         </ul>
+
       </nav>
     </header>
   );

@@ -1,6 +1,16 @@
+import anime from '../../node_modules/animejs/lib/anime.es';
+
 export const Belt = () => {
+  anime({
+    targets: '.beltAnim',
+    translateY: ['100%', '0%'],
+    duration: 500,
+    autoplay: true,
+    delay: anime.stagger(100),
+    easing: 'easeInOutSine',
+  });
   return (
-    <section className="flex items-center overflow-hidden bg-black">
+    <section className="beltAnim flex items-center overflow-hidden bg-black">
       <div
         className="flex items-center justify-center gap-4 w-[100vw] h-[7.8rem] flex-nowrap overflow-hidden"
         id="belt-parenet"
@@ -18,9 +28,7 @@ export const Belt = () => {
           />
         </svg>
 
-        <p className="txtBelt">
-          MAKE YOU HEALHTY
-        </p>
+        <p className="txtBelt">MAKE YOU HEALHTY</p>
 
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -35,9 +43,7 @@ export const Belt = () => {
           />
         </svg>
 
-        <p className="txtBelt">
-          MAKE YOU HEALHTY
-        </p>
+        <p className="txtBelt">MAKE YOU HEALHTY</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50"
@@ -51,9 +57,7 @@ export const Belt = () => {
           />
         </svg>
 
-        <p className="txtBelt">
-          MAKE YOU HEALHTY
-        </p>
+        <p className="txtBelt">MAKE YOU HEALHTY</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50"
@@ -67,9 +71,7 @@ export const Belt = () => {
           />
         </svg>
 
-        <p className="txtBelt">
-          MAKE YOU HEALHTY
-        </p>
+        <p className="txtBelt">MAKE YOU HEALHTY</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="50"

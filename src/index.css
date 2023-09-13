@@ -3,16 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-    .btn{
-        @apply font-medium px-8 py-4 text-center rounded-sm border-black border-2 border-solid hover:opacity-70 cursor-pointer
-    }
+@layer utilities {
+  .btn {
+    @apply font-medium px-8 py-4 text-center rounded-sm border-black border-2 border-solid hover:brightness-90 cursor-pointer;
+  }
 
-    .navLi{
-        @apply cursor-pointer px-2.5 py-1 rounded-full hover:bg-black hover:bg-opacity-60 hover:text-white duration-300 ease-in-out
-    }
+  .navLi {
+    @apply cursor-pointer px-2.5 py-1 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out;
+  }
 
-    .txtBelt{
-        @apply text-white font-bebas-neue text-[4rem]
-    }
+  .txtBelt {
+    @apply text-white font-bebas-neue text-[4rem];
+  }
 }

@@ -3,7 +3,6 @@ import { Button } from './button/button';
 import anime from '../../node_modules/animejs/lib/anime.es';
 
 export const Home = () => {
-
   anime({
     targets: 'article.animHome',
     translateX: ['-100%', '0%'],
@@ -23,10 +22,9 @@ export const Home = () => {
   });
 
   return (
-    <div className="flex justify-center">
+    <article className="flex justify-center">
       <section className="flex w-[90%] items-center justify-evenly gap-[1rem]">
         <article className="animHome flex flex-col w-[40%] items-start gap-[2.75rem]">
-
           <h1 className="font-bebas-neue text-[8.5rem] leading-[94%] tracking-[-0.17rem]">
             Make Your Body Fit and Healthy With Exercise
           </h1>
@@ -37,7 +35,6 @@ export const Home = () => {
           </p>
 
           <Button text={['Join Member', 'Login']} />
-
         </article>
 
         <img
@@ -45,8 +42,7 @@ export const Home = () => {
           alt="women.png"
           className="imgWomen w-[43rem] h-[52rem]"
         />
-
       </section>
-    </div>
+    </article>
   );
 };
