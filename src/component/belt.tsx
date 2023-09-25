@@ -1,14 +1,18 @@
 import anime from '../../node_modules/animejs/lib/anime.es';
+import { useEffect } from 'react';
 
 export const Belt = () => {
-  anime({
-    targets: '.beltAnim',
-    translateY: ['100%', '0%'],
-    duration: 500,
-    autoplay: true,
-    delay: anime.stagger(100),
-    easing: 'easeInOutSine',
-  });
+  useEffect(() => {
+    anime({
+      targets: '.beltAnim',
+      translateY: ['100%', '0%'],
+      duration: 500,
+      autoplay: true,
+      delay: anime.stagger(100),
+      easing: 'easeInOutSine',
+    });
+  }, []);
+
   return (
     <section className="beltAnim flex items-center overflow-hidden bg-black">
       <div

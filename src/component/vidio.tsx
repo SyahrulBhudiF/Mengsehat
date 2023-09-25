@@ -6,7 +6,7 @@ import { Button } from './button/button';
 
 export const Vidio = () => {
   return (
-    <article className="flex justify-center items-center gap-[15%] mt-[15%]">
+    <article className="flex justify-center items-center gap-[17%] mt-[15%] xl:gap-[14%] xl:mt-[18%] 2xl:gap-[15%]">
       <section className="relative w-[25rem] duration-300 ease-in-out ml-20">
         <Cards
           text="High Quality Vidio"

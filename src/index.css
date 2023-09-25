@@ -13,6 +13,6 @@
   }
 
   .txtBelt {
-    @apply text-white font-bebas-neue text-[4rem];
+    @apply text-white font-bebas-neue text-[4rem] xl:text-[2.3rem] 2xl:text-[2.5rem];
   }
 }
