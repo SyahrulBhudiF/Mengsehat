@@ -1,18 +1,11 @@
 import '../index.css';
 import { navInterface } from '../type';
-import anime from '../../node_modules/animejs/lib/anime.es';
+import { animNav } from '../animation/anim';
 import { useEffect } from 'react';
 
 export const Nav = ({ navlist }: navInterface) => {
   useEffect(() => {
-    anime({
-      targets: 'header',
-      translateY: ['-100%', '0%'],
-      duration: 800,
-      autoplay: true,
-      delay: anime.stagger(100),
-      easing: 'easeInOutSine',
-    });
+    animNav();
   }, []);
 
   return (

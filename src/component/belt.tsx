@@ -1,16 +1,9 @@
-import anime from '../../node_modules/animejs/lib/anime.es';
+import { animBelt } from '../animation/anim';
 import { useEffect } from 'react';
 
 export const Belt = () => {
   useEffect(() => {
-    anime({
-      targets: '.beltAnim',
-      translateY: ['100%', '0%'],
-      duration: 500,
-      autoplay: true,
-      delay: anime.stagger(100),
-      easing: 'easeInOutSine',
-    });
+    animBelt();
   }, []);
 
   return (

@@ -1,27 +1,12 @@
 import women from '../img/women.png';
 import { Button } from './button/button';
-import anime from '../../node_modules/animejs/lib/anime.es';
 import { useEffect } from 'react';
+import { animHome1, animHome2 } from '../animation/anim';
 
 export const Home = () => {
   useEffect(() => {
-    anime({
-      targets: '.animHome',
-      translateX: ['-100%', '0%'],
-      duration: 800,
-      autoplay: true,
-      delay: anime.stagger(100),
-      easing: 'easeInOutSine',
-    });
-
-    anime({
-      targets: '.imgWomen',
-      translateX: ['100%', '0%'],
-      duration: 800,
-      autoplay: true,
-      delay: anime.stagger(100),
-      easing: 'easeInOutSine',
-    });
+    animHome1();
+    animHome2();
   }, []);
 
   return (
