@@ -1,18 +1,25 @@
 import women from '../img/women.png';
 import { Button } from './button/button';
-import { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { animHome1, animHome2 } from '../animation/anim';
 
-export const Home = () => {
+export const Home: React.FC = () => {
+  const refText = useRef<HTMLDivElement>(null);
+  const refImg = useRef<HTMLImageElement>(null);
   useEffect(() => {
-    animHome1();
-    animHome2();
+    if (refText.current && refImg.current) {
+      animHome1(refText.current);
+      animHome2(refImg.current);
+    }
   }, []);
 
   return (
     <article className="flex justify-center">
       <section className="flex w-[90%] items-center justify-evenly gap-[5rem]">
-        <div className="animHome flex flex-col w-[40%] items-start gap-[2.75rem]">
+        <div
+          ref={refText}
+          className="flex flex-col w-[40%] items-start gap-[2.75rem]"
+        >
           <h1 className="font-bebas-neue text-[8.5rem] leading-[94%] tracking-[-0.17rem] xl:text-[5.5rem] 2xl:text-8xl">
             Make Your Body Fit and Healthy With Exercise
           </h1>
@@ -28,7 +35,8 @@ export const Home = () => {
         <img
           src={women}
           alt="women.png"
-          className="imgWomen w-[43rem] h-[52rem] xl:w-[42rem] xl:h-[49rem] 2xl:h-[46rem] 2xl:w-[40rem] laptop2:h-[39.5rem] laptop2:w-[38rem]"
+          ref={refImg}
+          className="w-[43rem] h-[52rem] xl:w-[38rem] xl:h-[49rem] 2xl:h-[46rem] 2xl:w-[40rem] laptop2:h-[39.5rem] laptop2:w-[36rem]"
         />
       </section>
     </article>

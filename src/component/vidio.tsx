@@ -3,8 +3,9 @@ import vidio1 from '../img/vidio1.png';
 import vidio2 from '../img/vidio2.png';
 import { AiFillCaretRight } from 'react-icons/ai';
 import { Button } from './button/button';
+import React from 'react';
 
-export const Vidio = () => {
+export const Vidio: React.FC = () => {
   return (
     <article className="flex justify-center items-center gap-[17%] mt-[15%] xl:gap-[14%] xl:mt-[18%] 2xl:gap-[15%]">
       <section className="relative w-[25rem] duration-300 ease-in-out ml-20">

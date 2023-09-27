@@ -1,11 +1,6 @@
-import { animBelt } from '../animation/anim';
-import { useEffect } from 'react';
+import React from "react";
 
-export const Belt = () => {
-  useEffect(() => {
-    animBelt();
-  }, []);
-
+export const Belt: React.FC = () => {
   return (
     <section className="beltAnim flex items-center overflow-hidden bg-black">
       <div

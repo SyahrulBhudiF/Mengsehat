@@ -4,7 +4,7 @@ import sitUp from '../img/sitUp.png';
 import boxing from '../img/boxing.png';
 import weight from '../img/weight.png';
 
-export const Program = ({ text }: programInterface) => {
+export const Program: React.FC<programInterface> = ({ text }) => {
   return (
     <article className="flex flex-col mb-48">
       <section className="flex flex-col items-center justify-center mt-[6.25rem] gap-11 xl:ml-14 xl:mr-14 2xl:mr-[8%] 2xl:ml-[8%]">

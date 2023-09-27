@@ -1,15 +1,19 @@
 import '../index.css';
 import { navInterface } from '../type';
 import { animNav } from '../animation/anim';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
-export const Nav = ({ navlist }: navInterface) => {
+export const Nav: React.FC<navInterface> = ({ navlist }) => {
+  const refNav = useRef<HTMLElement>(null);
+
   useEffect(() => {
-    animNav();
+    if (refNav.current) {
+      animNav(refNav.current);
+    }
   }, []);
 
   return (
-    <header>
+    <header ref={refNav}>
       <nav className="flex gap-[38rem] justify-evenly items-center pt-2 xl:gap-[20rem] 2xl:gap-[25rem]">
         <h1 className="font-bebas-neue text-[1.5rem] cursor-pointer">
           🏋️‍♂️MENGSEHAT

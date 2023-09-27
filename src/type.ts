@@ -14,7 +14,7 @@ export interface cardInterface {
   Icon?: IconType;
   py: string;
   px: string;
-  fontSize: string
+  fontSize: string;
 }
 
 export interface cardsInterface {
@@ -29,7 +29,7 @@ export interface cardsInterface {
   IconPopUp?: IconType;
   py: string;
   px: string;
-  fontSize2: string
+  fontSize2: string;
 }
 
 export interface programInterface {

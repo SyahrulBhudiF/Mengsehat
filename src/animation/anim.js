@@ -1,8 +1,8 @@
 import anime from '../../node_modules/animejs/lib/anime.es';
 
-export const animHome1 = () => {
+export const animHome1 = (refText) => {
     return anime({
-        targets: '.animHome',
+        targets: refText,
         translateX: ['-100%', '0%'],
         duration: 800,
         autoplay: true,
@@ -11,9 +11,9 @@ export const animHome1 = () => {
     });
 }
 
-export const animHome2 = () => {
+export const animHome2 = (refImg) => {
     return anime({
-        targets: '.imgWomen',
+        targets: refImg,
         translateX: ['100%', '0%'],
         duration: 800,
         autoplay: true,
@@ -22,22 +22,11 @@ export const animHome2 = () => {
     });
 }
 
-export const animNav = () => {
+export const animNav = (refNav) => {
     return anime({
-        targets: 'header',
+        targets: refNav,
         translateY: ['-100%', '0%'],
         duration: 800,
-        autoplay: true,
-        delay: anime.stagger(100),
-        easing: 'easeInOutSine',
-    });
-}
-
-export const animBelt = () => {
-    return anime({
-        targets: '.beltAnim',
-        translateY: ['100%', '0%'],
-        duration: 500,
         autoplay: true,
         delay: anime.stagger(100),
         easing: 'easeInOutSine',

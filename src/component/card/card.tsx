@@ -1,6 +1,14 @@
+import React from 'react';
 import { cardInterface } from '../../type';
 
-export const Card = ({ img, text, Icon, px, py, fontSize }: cardInterface) => {
+export const Card: React.FC<cardInterface> = ({
+  img,
+  text,
+  Icon,
+  px,
+  py,
+  fontSize,
+}) => {
   const classStyle = `rounded-full bg-slate-600 z-0 ${py} ${px} font-bebas-neue ${fontSize} text-white bg-opacity-60 backdrop-blur-sm`;
 
   return (

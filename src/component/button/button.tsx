@@ -1,6 +1,7 @@
+import React from 'react';
 import { buttonInterface } from '../../type';
 
-export const Button = ({ text }: buttonInterface) => {
+export const Button: React.FC<buttonInterface> = ({ text }) => {
   return (
     <div className="flex gap-[1.5rem] items-center">
       <span className="btn bg-black text-white">{text[0]}</span>
