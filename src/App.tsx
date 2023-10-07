@@ -1,11 +1,14 @@
 import React from 'react';
-import { Nav } from './component/nav';
-import { Home } from './component/home';
-import { Belt } from './component/belt';
-import { Program } from './component/program';
-import { Vidio } from './component/vidio';
-import { Slide } from './component/slide';
+import { Nav } from './component/Nav';
+import { Home } from './component/Home';
+import { Belt } from './component/Belt';
+import { Program } from './component/Program';
+import { Vidio } from './component/Vidio';
+import { Slide } from './component/Slide';
+import { Entrance } from './component/Entrance';
+import { Join } from './component/Join';
 import './css/index.css';
+import { Footer } from './component/Footer';
 
 const App: React.FC = () => {
   return (
@@ -24,6 +27,9 @@ const App: React.FC = () => {
       <Program text="OUR PROGRAM" />
       <Vidio />
       <Slide />
+      <Entrance />
+      <Join />
+      <Footer />
     </article>
   );
 };

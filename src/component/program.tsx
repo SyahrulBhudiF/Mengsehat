@@ -1,4 +1,4 @@
-import { Cards } from './card/cards';
+import { Cards } from './card/Cards';
 import { programInterface } from '../type';
 import sitUp from '../img/sitUp.png';
 import boxing from '../img/boxing.png';
@@ -8,7 +8,7 @@ export const Program: React.FC<programInterface> = ({ text }) => {
   return (
     <article className="flex flex-col mb-48">
       <section className="flex flex-col items-center justify-center mt-[6.25rem] gap-11 xl:ml-14 xl:mr-14 2xl:mr-[8%] 2xl:ml-[8%]">
-        <span className="text-6xl font-bebas-neue">{text}</span>
+        <span className="text-6xl font-bebas-neue text-[#1B1B1B]">{text}</span>
         <div className="flex gap-9">
           <Cards
             text="Sit Up"

@@ -24,7 +24,7 @@ export const Home: React.FC = () => {
             Make Your Body Fit and Healthy With Exercise
           </h1>
 
-          <p className="font-public-sans text-[1.5rem] tracking-[-0.015rem] w-[90%] mt-[-2rem] text-black text-opacity-60">
+          <p className="font-public-sans text-[1.5rem] tracking-[-0.015rem] w-[90%] mt-[-2rem] text-[#1B1B1B] text-opacity-60">
             Join us with great people. We will create a program that makes you
             healthy and keeps you from getting bored with our program.
           </p>

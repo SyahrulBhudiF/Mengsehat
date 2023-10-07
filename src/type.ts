@@ -38,6 +38,7 @@ export interface programInterface {
 
 export interface textInterface {
   text: string[];
+  check?: number;
 }
 
 export interface slideInterface {

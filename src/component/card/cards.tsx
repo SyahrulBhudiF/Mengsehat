@@ -1,4 +1,4 @@
-import { Card } from './card';
+import { Card } from './Card';
 import { cardsInterface } from '../../type';
 
 export const Cards: React.FC<cardsInterface> = ({

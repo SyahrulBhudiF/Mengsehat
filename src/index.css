@@ -5,11 +5,11 @@
 
 @layer utilities {
   .btn {
-    @apply font-medium px-8 py-4 text-center rounded-sm border-black border-2 border-solid hover:brightness-90 cursor-pointer;
+    @apply font-medium px-8 py-4 text-center rounded-sm border-[#1B1B1B] border-2 border-solid hover:brightness-90 cursor-pointer;
   }
 
   .navLi {
-    @apply cursor-pointer px-2.5 py-1 rounded-full hover:bg-black hover:text-white duration-300 ease-in-out;
+    @apply cursor-pointer px-2.5 py-1 rounded-full text-[#1B1B1B] hover:bg-[#1B1B1B] hover:text-white duration-300 ease-in-out;
   }
 
   .txtBelt {
@@ -17,11 +17,11 @@
   }
 
   .text {
-    @apply flex flex-col max-w-xl gap-[3.25rem] items-baseline mt-[-5%];
+    @apply flex flex-col max-w-xl gap-[2rem] items-start mt-[-5%];
   }
 
   .btn-slide {
-    @apply cursor-pointer p-[0.8rem]  text-white rounded-full text-2xl bg-black hover:bg-slate-700 active:bg-gray-500 transition-colors duration-300;
+    @apply cursor-pointer p-[0.8rem]  text-white rounded-full text-2xl bg-[#1B1B1B] hover:bg-slate-700 active:bg-gray-500 transition-colors duration-300;
   }
 
   :root {

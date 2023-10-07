@@ -15,7 +15,7 @@ export const Nav: React.FC<navInterface> = ({ navlist }) => {
   return (
     <header ref={refNav}>
       <nav className="flex gap-[38rem] justify-evenly items-center pt-2 xl:gap-[20rem] 2xl:gap-[25rem]">
-        <h1 className="font-bebas-neue text-[1.5rem] cursor-pointer">
+        <h1 className="font-bebas-neue text-[1.5rem] cursor-pointer text-[#1B1B1B] tracking-wider">
           🏋️‍♂️MENGSEHAT
         </h1>
 

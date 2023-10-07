@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Belt: React.FC = () => {
   return (
-    <section className="beltAnim flex items-center overflow-hidden bg-black">
+    <section className="beltAnim flex items-center overflow-hidden bg-[#1B1B1B]">
       <div
         className="flex items-center justify-center gap-4 w-[100vw] h-[7.8rem] flex-nowrap overflow-hidden"
         id="belt-parenet"

@@ -9,8 +9,10 @@ export const SlideProduct: React.FC<slideInterface> = ({
   position,
 }) => {
   return (
-    <section className="w-[40rem] h-[22rem] p-[2rem] flex justify-center items-start flex-col gap-20 bg-black mt-0 mb-0 mr-auto ml-auto rounded-sm">
-      <p className="text-white font-public-sans text-3xl xl:text-2xl w-[30rem]">{text}</p>
+    <section className="w-[40rem] h-[22rem] p-[2rem] flex justify-center items-start flex-col gap-20 bg-[#1B1B1B] mt-0 mb-0 mr-auto ml-auto rounded-sm">
+      <p className="text-white font-public-sans text-3xl xl:text-2xl ">
+        {text}
+      </p>
       <div className="flex items-center gap-4">
         <div className="p-[0.01rem] bg-slate-200 rounded-full">
           <img src={img} className="rounded-full" />

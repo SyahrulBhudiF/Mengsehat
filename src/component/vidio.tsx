@@ -1,4 +1,4 @@
-import { Cards } from './card/cards';
+import { Cards } from './card/Cards';
 import vidio1 from '../img/vidio1.png';
 import vidio2 from '../img/vidio2.png';
 import { AiFillCaretRight } from 'react-icons/ai';
@@ -8,7 +8,7 @@ import React from 'react';
 
 export const Vidio: React.FC = () => {
   return (
-    <article className="flex justify-center items-center gap-[17%] mt-[15%] xl:gap-[14%] xl:mt-[18%] 2xl:gap-[15%]">
+    <article className="flex justify-center items-center gap-[17%] mt-[15%] xl:gap-[14%] xl:mt-[18%] 2xl:gap-[15%] 2xl:mt-[20%]">
       <section className="relative w-[25rem] duration-300 ease-in-out ml-20">
         <Cards
           text="High Quality Vidio"
