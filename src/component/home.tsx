@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
   }, []);
 
   return (
-    <article className="flex justify-center">
+    <article className="flex justify-center overflow-hidden">
       <section className="flex w-[90%] items-center justify-evenly gap-[5rem]">
         <div
           ref={refText}
