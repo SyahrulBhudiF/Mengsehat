@@ -34,3 +34,7 @@ npm install --save @types/animejs
 ```
 npm install swiper
 ```
+## Install React Icons
+```
+npm install react-icons --save
+```
