@@ -15,4 +15,21 @@
   .txtBelt {
     @apply text-white font-bebas-neue text-[4rem] xl:text-[2.3rem] 2xl:text-[2.5rem];
   }
+
+  .text {
+    @apply flex flex-col max-w-xl gap-[3.25rem] items-baseline mt-[-5%];
+  }
+
+  .btn-slide {
+    @apply cursor-pointer p-[0.8rem]  text-white rounded-full text-2xl bg-black hover:bg-slate-700 active:bg-gray-500 transition-colors duration-300;
+  }
+
+  :root {
+    --swiper-pagination-color: #999999;
+    --swiper-pagination-bullet-inactive-color: #5b5b5b;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
+  }
 }

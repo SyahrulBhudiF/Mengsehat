@@ -3,6 +3,7 @@ import vidio1 from '../img/vidio1.png';
 import vidio2 from '../img/vidio2.png';
 import { AiFillCaretRight } from 'react-icons/ai';
 import { Button } from './button/button';
+import { Text } from './text/Text';
 import React from 'react';
 
 export const Vidio: React.FC = () => {
@@ -40,14 +41,13 @@ export const Vidio: React.FC = () => {
         </section>
       </section>
 
-      <section className="flex flex-col max-w-xl gap-9 items-baseline mt-[-5%]">
-        <p className="font-bebas-neue text-6xl">
-          WE HAVE PROVIDED LOTS OF VIDEOS FOR YOUR EASE
-        </p>
-        <p className="font-public-sans text-2xl w-[95%] text-black text-opacity-60">
-          This will help you if you want to fitness at home. We hope that with
-          this online video you will remain consistent no matter where you are.
-        </p>
+      <section className="text">
+        <Text
+          text={[
+            'WE HAVE PROVIDED LOTS OF VIDEOS FOR YOUR EASE',
+            'This will help you if you want to fitness at home. We hope that with this online video you will remain consistent no matter where you are.',
+          ]}
+        />
         <Button text={['Watch Video', 'Try free 7 days']} />
       </section>
     </article>

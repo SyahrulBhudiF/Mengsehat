@@ -35,3 +35,14 @@ export interface cardsInterface {
 export interface programInterface {
   text: string;
 }
+
+export interface textInterface {
+  text: string[];
+}
+
+export interface slideInterface {
+  text: string;
+  img: string;
+  name: string;
+  position: string;
+}

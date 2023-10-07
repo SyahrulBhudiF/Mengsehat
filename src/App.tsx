@@ -4,11 +4,12 @@ import { Home } from './component/home';
 import { Belt } from './component/belt';
 import { Program } from './component/program';
 import { Vidio } from './component/vidio';
+import { Slide } from './component/slide';
 import './css/index.css';
 
 const App: React.FC = () => {
   return (
-    <body className="h-screen max-w-[100wh]">
+    <article className="h-screen max-w-[100wh]">
       <Nav
         navlist={[
           'Experience',
@@ -22,7 +23,8 @@ const App: React.FC = () => {
       <Belt />
       <Program text="OUR PROGRAM" />
       <Vidio />
-    </body>
+      <Slide />
+    </article>
   );
 };
 
