@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import '../../node_modules/swiper/swiper-bundle.css';
 import '../../node_modules/swiper/swiper.css';
-import { SlideProduct } from './card/SlideProduct';
+import { SlideProduct } from './card/slideProduct';
 import { Product } from './text/Product';
 
 export const Slide: React.FC = () => {

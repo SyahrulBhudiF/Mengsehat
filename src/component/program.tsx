@@ -1,4 +1,4 @@
-import { Cards } from './card/Cards';
+import { Cards } from './card/cards';
 import { programInterface } from '../type';
 import sitUp from '../img/sitUp.png';
 import boxing from '../img/boxing.png';

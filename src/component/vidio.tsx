@@ -1,4 +1,4 @@
-import { Cards } from './card/Cards';
+import { Cards } from './card/cards';
 import vidio1 from '../img/vidio1.png';
 import vidio2 from '../img/vidio2.png';
 import { AiFillCaretRight } from 'react-icons/ai';
