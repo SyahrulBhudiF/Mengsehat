@@ -9,10 +9,12 @@ import { Entrance } from './component/Entrance';
 import { Join } from './component/Join';
 import './css/index.css';
 import { Footer } from './component/Footer';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App: React.FC = () => {
   return (
     <article className="h-screen max-w-[100wh]">
+      <SpeedInsights />
       <Nav
         navlist={[
           'Experience',
